@@ -1,18 +1,18 @@
 import React from 'react';
 import {StyleSheet, View, Text, Image, ImageBackground, TouchableOpacity, ScrollView} from 'react-native';
-import ItemPortos from './components/ItemPortos'
+import ItemPortos from '../ItemPortos'
 
 const loginPage = () => {
-  const imageSource = require('./assets/portfolio1.png');
+  const imageSource = require('../../assets/images/portfolio1.png');
   return (
     <ScrollView>
-      <ImageBackground source={require('./assets/bg.png')} style={styles.container}>
+      <ImageBackground source={require('../../assets/images/bg.png')} style={styles.container}>
 
       <View style={styles.top}>
         <View style={styles.topContent}>
           <Text style={styles.titleApp}>VINCENTIUS RANGGA</Text>
           <Image style={styles.dribbble}
-            source={require('./assets/dribbble-ic.png')}
+            source={require('../../assets/images/dribbble-ic.png')}
           />
         </View>
       </View>
@@ -29,7 +29,7 @@ const loginPage = () => {
                   <View style={styles.contentBtnHire}>
                     <Text style={styles.textBtnHire}>Hire Me</Text>
                     <Image style={styles.arrowBtn}
-                    source={require('./assets/arrow-ic-btn.png')}
+                    source={require('../../assets/images/arrow-ic-btn.png')}
                     />
                   </View>
                 </TouchableOpacity>
